@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Node Unblocker</title>
+  <title>上车走吧</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- header font -->
   <link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
@@ -17,11 +17,10 @@
     h2, h3, h4, h5, h6 { letter-spacing: 2px; font-weight: normal;}
   
     /* colors */
-    body { background-color: #000306; color: white;}
+    body { background-color: #36393e; color: whitesmoke;}
     .container { background-color: #3F4038; border-color: #5B3E38}
     a { color: #62BECB; }
     a:hover {color: #82DEEB }
-
 	#error {  border:1px dotted white; background: brown; }
     
     /* stripes and borders */
@@ -67,43 +66,39 @@
   
     <div class="main">
   
-      <h1>Node Unblocker</h1>
+      <h1><center><span id="jinrishici-sentence">正在加载今日诗词....</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script></a><center></h1>
       
       <div id="error"></div>
 
       <form action="no-js" method="get" id="unblocker-form">
         <p>
-          URL: 
-          <input type="text" id="url" name="url" autofocus="autofocus" />
-          <input type="submit" value="Go" />
+          网址: 
+          <input type="text" id="url" name="url" autofocus="autofocus" value="https://google.com"/>
+          <input type="submit" value="走你"/>
         </p>
 
       </form>
       
-<div id="google-ad">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Nodeunblocker.com -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-9477050254721722"
-     data-ad-slot="3464697570"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+       <h2>
+    <center>
+    <div id="show_time0" style="">
+        <script>setInterval("show_time0.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000); 
+    </script>
+    </center>
+      </h2>
       
-      <h3>About Node Unblocker</h3>
-      <p>Node Unblocker is a web proxy, similar to CGIProxy, PHProxy, or Glype, that allows users to evade filters and censorship and access blocked websites. </p>
-      <p>It's designed to be extremely fast and compatible: It processes the data on-the-fly rather than buffering the entire response, and it only modifies URLs when necessary - relative ones will "just work". </p>
-      <p>Node Unblocker is written in JavaScript with <a href="http://nodejs.org">node.js</a>. The source code is <a href="https://github.com/nfriedly/node-unblocker">available on github</a>.</p>
-
-    </div>
-    
+      <h3>天气预报</h3>
+<iframe width="800" scrolling="no" height="120" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=19&color=%23FFFF00&bdc=%23&icon=5&temp=1&num=5&site=12"></iframe>
+	 </form>
+      <h4> 社会主义核心价值观:</h4>
+      <h5>富强、民主、文明、和谐 自由、平等、公正、法治 爱国、敬业、诚信、友善  
     <div class="footer">
-      <p><a href="https://github.com/nfriedly/node-unblocker">Node Unblocker</a> by <a href="http://www.nfriedly.com/" title="Node.js developer and JavaScript Expert">Nathan Friedly</a></p>
+      <p>特别鸣谢：
+      <a href="https://github.com/nfriedly/node-unblocker">Node Unblocker</a> by <a href="http://nfriedly.com/" title="Node.js developer and JavaScript Expert">Nathan Friedly</a>
+	    <a href="https://www.jinrishici.com/">今日诗词</a>
+	    <a href="https://www.tianqi.com/plugin/">全球天气网</a>
+	    </p>
     </div>
-  
-  </div>
 	<script>
 		function $(id){
 			return document.getElementById(id);
